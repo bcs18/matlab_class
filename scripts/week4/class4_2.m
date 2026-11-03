@@ -58,7 +58,7 @@ home
 A
 disp('fprintf case 2')
 fid=fopen('dataout2.txt','w');
-fprintf(fid,'%f %f %f\n',A);
+fprintf(fid,'%f %f %f\n',A); %this will make an output with three floating points and then a new line then 3 then new. \n specifies the new line
 fclose(fid);  %better, but array is transposed. Why?? Because matlab operates down
 %columns first, but data files get written out by rows!! The net effect is
 %that the transpose of what we want gets written out.
@@ -86,7 +86,7 @@ disp('fprintf case 4')
 fid=fopen('dataout4.txt','w');
 fprintf(fid,'%8.2f%8.2f%8.2f\n',A');
 fclose(fid);                 
-% What is the 8.4?? A total of 8 columns, with 4 decimal places. The other 
+% What is the 8.2?? A total of 8 columns, with 2 decimal places. The other 
 % spaces are for the period, possibly a negative sign, a digit in the ones
 % place and a leading space. You have to carefully think through your 
 % 'field widths' when you are creating specifiers. 
@@ -94,7 +94,7 @@ fclose(fid);
 %% WriteMatrix
 %Now, writematrix is a pretty powerful way for you to write out a
 %homogeneous (no mixed format allowed) array to a variety of file formats
-%(text, csv, spreadsheet, and more). So, it's really good to known about. 
+%(text, csv, spreadsheet, and more). So, it's really good to know about. 
 
 %basic usage:
 writematrix(A,'dataout5.txt')
@@ -128,7 +128,5 @@ T = table(Age,Height,Weight,BloodPressure,...
 %We can immediately write this out with:
 writetable(T,'dataout8.txt','WriteRowNames',true) 
 %note that you can change the delimiter and do other useful things...
-
-
 
 

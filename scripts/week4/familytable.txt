@@ -1,0 +1,7 @@
+Row	LastName	YearofBirth	MonthofBirth	DayofBirth
+Chester	Scott	1970	July	26
+Christine	Scott	1966	May	15
+Jake	Scott	2002	September	7
+Brandon	Scott	1998	May	24
+Kyle	Scott	1994	October	12
+Lindsay	Neilson	1990	February	28

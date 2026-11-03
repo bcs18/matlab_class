@@ -79,7 +79,7 @@ xlabel('x');ylabel('y');title('Line plot'); %as simple as it gets
 
 % We could try to 'print this'
 
-print -dpng -r72 testfigure.png
+print -dpng -r72 testfigure.png %first dash is file type, then resolution, then name of file
 
 disp('Any key to continue')
 pause
@@ -103,7 +103,7 @@ pause
 
 %Instead, we could leave the font as is, and change the figure size!
 
-set(gcf,'PaperPosition',[1 1 4 3])
+set(gcf,'PaperPosition',[1 1 4 3]) %use paper position to resize your figure.:position1:position2:height:width
 print -dpng -r300 testfigure3.png
 
 

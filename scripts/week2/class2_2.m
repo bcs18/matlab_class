@@ -23,8 +23,8 @@ size(A_keep)
 % greater than 0.5. We can locate those rows with the find command. The I 
 % variable contains those row numbers.
 
-%Let's finally subset our matrix to keep only those rows (and we'll keep all c
-% olumns in those rows), and we'll put that in a matrix called A_keep.
+%Let's finally subset our matrix to keep only those rows (and we'll keep all
+% columns in those rows), and we'll put that in a matrix called A_keep.
 
 %A_keep2 and A_keep3 are the same result, found in somewhat more compact ways. 
 % Note that in coming up with A_keep3, we don't even use the find command! Note 
